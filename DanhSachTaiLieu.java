@@ -6,7 +6,7 @@ import java.util.List;
  * Day la file demo de kiem tra cac lop, khong phai menu cua Yeu cau 2.
  * @author Vu Minh Hieu
  */
-public class DemoYeuCau1 {
+public class DanhSachTaiLieu {
     public static void main(String[] args) {
         // Da hinh: moi phan tu la TaiLieu, nhung thuc chat la Sach / TapChi / Bao
         List<TaiLieu> danhSach = new ArrayList<>();
