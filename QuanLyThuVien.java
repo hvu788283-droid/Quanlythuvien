@@ -4,7 +4,7 @@ import java.time.format.DateTimeParseException;
 import java.time.format.ResolverStyle;
 import java.util.Scanner;
 
-public class DemoYeuCau2 {
+public class QuanLyThuVien {
     private static final Scanner sc = new Scanner(System.in);
     private static final QuanLyTaiLieu ql = new QuanLyTaiLieu();
     private static final DateTimeFormatter DINH_DANG_NGAY =
@@ -75,7 +75,8 @@ public class DemoYeuCau2 {
             System.out.println("1. Them moi tai lieu");
             System.out.println("2. Xoa tai lieu theo ma");
             System.out.println("3. Hien thi danh sach tai lieu");
-         
+            System.out.println("4. Tim kiem tai lieu theo loai");
+            System.out.println("5. Thoat chuong trinh");
             System.out.println("======================================");
             int chon = nhapSo("Nhap lua chon: ", 1, 3);
             switch (chon) {
@@ -89,7 +90,13 @@ public class DemoYeuCau2 {
                 case 3:
                     ql.hienThiTatCa();
                     break;
-              
+                case 4:
+                    System.out.println("1. Sach | 2. Tap chi | 3. Bao");
+                    ql.timTheoLoai(nhapSo("Chon loai can tim: ", 1, 3));
+                    break;
+                case 5:
+                    System.out.println("Da thoat chuong trinh.");
+                    return;
                 default:
                     break;
             }
